@@ -1,0 +1,78 @@
+@media (max-width: 600px) {
+  .header nav ul {
+    display: none;
+  }
+  .header nav ul li {
+    margin: 30px;
+  }
+  .header nav ul li a {
+    font-size: 20px;
+  }
+  .header nav .menuLines {
+    position: relative;
+    cursor: pointer;
+  }
+  .header nav .mainMenuActive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .header nav .menuLinesActive {
+    right: 50px;
+  }
+  .header nav .menuLinesActive span:nth-of-type(2) {
+    display: none;
+  }
+  .header nav .menuLinesActive span:nth-of-type(1) {
+    transform: rotate(-45deg);
+    margin: 0;
+    position: absolute;
+  }
+  .header nav .menuLinesActive span:nth-of-type(3) {
+    transform: rotate(45deg);
+    margin: 0;
+    position: absolute;
+  }
+  .header nav .menuLines span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    z-index: 55;
+  }
+}
+.substrate {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.whiteBg {
+  background: #fff !important;
+}
+
+.whiteColor {
+  color: #fff !important;
+  position: relative;
+  z-index: 50;
+}/*# sourceMappingURL=menu.css.map */

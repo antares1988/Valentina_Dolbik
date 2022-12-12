@@ -1,0 +1,73 @@
+.mainAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+.mainAbout .img img {
+  box-shadow: 0 0 5px 1px gray;
+}
+
+.mainText {
+  width: 44%;
+}
+.mainText p {
+  margin-bottom: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.mainText .aboutContact {
+  color: #9b9b9b;
+}
+
+@media (max-width: 1160px) {
+  .mainAbout {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .mainAbout .img {
+    order: 1;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .mainAbout .img img {
+    width: 100%;
+  }
+  .mainAbout .mainText {
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mainAbout .mainText p {
+    margin-bottom: 10px;
+    text-indent: 15px;
+    text-align: justify;
+  }
+  .mainAbout .aboutContacts {
+    display: none;
+    order: 2;
+    width: 49%;
+  }
+}
+@media (max-width: 480px) {
+  .mainAbout .mainText {
+    font-size: 16px;
+  }
+  .mainAbout .mainText p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=about.css.map */

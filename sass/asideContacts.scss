@@ -1,0 +1,39 @@
+.aboutContacts {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  .footerUl {
+    margin-bottom: 50px;
+    &:nth-child(2) {
+      li::after {
+        content: url(../img/Arrow.png);
+        margin-left: 5px;
+      }
+      li:first-child:after {
+        content: "";
+      }
+    }
+  }
+  li:first-of-type {
+    margin-bottom: 30px;
+  }
+  li {
+    &:nth-child(2) {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+    }
+    a {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+      &:hover {
+        text-decoration-line: underline;
+        color: #9b9b9b;
+      }
+    }
+  }
+}

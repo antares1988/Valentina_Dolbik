@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+.none {
+  display: none;
+}
+body {
+  min-width: 320px;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+  min-width: 320px;
+}
+li {
+  transition: 0.3s;
+}
+a {
+  transition: 0.3s;
+}
+
+@import 'header.scss';
+@import 'gallery.scss';
+@import 'asideContacts.scss';
+@import 'footer.scss';
+@import 'about.scss';
+@import 'contacts.scss';
+@import 'blog.scss';
+@import 'work.scss';
+@import 'menu.scss';
+h1 {
+  max-width: 1000px;
+  margin: 45px auto 45px auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/******* main *******/
+main {
+  flex: 1 0 auto;
+}
+.examples {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 70px;
+  li {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    &:hover {
+      background-color: #000;
+    }
+    a {
+      color: #000;
+      padding: 10px 20px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .examples {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 700px) {
+  .examples {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 850px) {
+  main {
+    padding: 0 20px;
+  }
+  .gallery {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .examples {
+    margin-bottom: 40px;
+    li {
+      font-size: 16px;
+      line-height: 20px;
+      a {
+        padding: 5px 10px;
+      }
+    }
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 25px 0;
+  }
+}
+@media (max-width: 1050px) {
+  h1 {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .examples {
+    li {
+      width: 100%;
+    }
+  }
+}

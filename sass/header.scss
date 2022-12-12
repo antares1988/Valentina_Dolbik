@@ -1,0 +1,103 @@
+header {
+  flex: 0 0 auto;
+}
+.header {
+  width: 1200px;
+  padding: 0 50px;
+  margin: 24px auto;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  .logoContainer {
+    width: 82px;
+    height: 73px;
+
+    .cls-1,
+    .cls-2 {
+      fill: none;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+    .cls-1 {
+      stroke: #000;
+      stroke-width: 8px;
+    }
+
+    .cls-2 {
+      stroke: #fff;
+      stroke-width: 3px;
+    }
+    &:hover {
+      .cls-1 {
+        animation: 1.4s logoAnimation2;
+      }
+      .cls-2 {
+        animation: 1.4s logoAnimation1;
+      }
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      column-gap: 35px;
+      li {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        a {
+          display: flex;
+          flex-direction: column;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          color: #000000;
+          &::after {
+            content: "";
+            padding-top: 3px;
+            border-bottom: 1px solid #000;
+            width: 0%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            transition: 0.5s;
+          }
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes logoAnimation1 {
+  0% {
+    stroke: rgb(255, 255, 255);
+  }
+  50% {
+    stroke: rgb(0, 0, 0);
+  }
+  100% {
+    stroke: rgb(255, 255, 255);
+  }
+}
+@keyframes logoAnimation2 {
+  0% {
+    stroke: rgb(0, 0, 0);
+  }
+  50% {
+    stroke: rgb(244, 168, 38);
+  }
+  100% {
+    stroke: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+  }
+}

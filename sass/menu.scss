@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+  .header {
+    nav {
+      ul {
+        display: none;
+        li {
+          margin: 30px;
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      .menuLines {
+        position: relative;
+        cursor: pointer;
+      }
+      .mainMenuActive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 150px;
+        //   background-color: #000;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+      .menuLinesActive {
+        right: 50px;
+        span:nth-of-type(2) {
+          display: none;
+        }
+        span:nth-of-type(1) {
+          transform: rotate(-45deg);
+          margin: 0;
+          position: absolute;
+        }
+        span:nth-of-type(3) {
+          transform: rotate(45deg);
+          margin: 0;
+          position: absolute;
+        }
+      }
+      .menuLines span {
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #000;
+        border-radius: 3px;
+        z-index: 55;
+      }
+    }
+  }
+}
+
+.substrate {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.93);
+  z-index: 50;
+  overflow: hidden;
+}
+.overflow {
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+}
+.whiteBg {
+  background: #fff !important;
+}
+.whiteColor {
+  color: #fff !important;
+  position: relative;
+  z-index: 50;
+}

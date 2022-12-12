@@ -1,0 +1,35 @@
+.aboutContacts {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.aboutContacts .footerUl {
+  margin-bottom: 50px;
+}
+.aboutContacts .footerUl:nth-child(2) li::after {
+  content: url(../img/Arrow.png);
+  margin-left: 5px;
+}
+.aboutContacts .footerUl:nth-child(2) li:first-child:after {
+  content: "";
+}
+.aboutContacts li:first-of-type {
+  margin-bottom: 30px;
+}
+.aboutContacts li:nth-child(2) {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+.aboutContacts li a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+.aboutContacts li a:hover {
+  text-decoration-line: underline;
+  color: #9b9b9b;
+}/*# sourceMappingURL=asideContacts.css.map */
