@@ -101,3 +101,11 @@ header {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .header {
+    .logoContainer {
+      width: 55px;
+      height: 60px;
+    }
+  }
+}
